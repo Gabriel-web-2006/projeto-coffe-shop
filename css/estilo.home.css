@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: url('img/caffe.3.jpg') no-repeat;
+}
+.menu {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.74);
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+}
+.menu .logo {
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+.menu span {
+    font-size: 20px;
+}
+.menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.menu ul li {
+    margin: 0 5px;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding: 8px 15px;
+}
+.menu ul li a:hover {
+    color: #ffca44;
+}
+.menu .menu-btn svg {
+    cursor: pointer;
+    display: none;
+    color: white;
+}
+.slogam h1 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin: 40px 40px 50px 50px;
+
+}
+.slogam span {
+    font-size: 20px;
+}
+.slogam h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #ffca44;
+    margin: 40px 40px 50px 50px;
+}
+.slogam p {
+    text-align: justify;
+    color: white;
+    margin: 20px 20px 30px 30px;
+    width: 500px;
+    font-family: 'Poppins', sans-serif;
+}
+.mais-comprado {
+    background-color: white;
+    width: 500px;
+    margin: 20px 20px 30px 30px;
+    text-align: center;
+}
+.mais-comprado h1 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.mais-comprado img {
+    width: 300px;
+    background-color: white;
+    height: 200px;
+}
+.mais-comprado P {
+    font-family:'Poppins', sans-serif;
+}
+.lateral {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 40%;
+    margin-top: -10%;
+}
+.rodape svg {
+    margin: 20px 20px 20px 20;
+}
+.rodape {
+    width: 100%;
+    height: 5cm;
+    text-align: center;
+    background-color: #000000;
+    color: white;
+}.rodape p {
+    font-family: 'Poppins', sans-serif;
+    margin: 20px 20px 20px 20px;
+}
+.rodape a {
+    text-decoration: none;
+    color: #ffca44;
+}
+@media (max-width:920px) {
+    .menu .menu-btn svg {
+        display: block;
+        color: white;
+    }
+    .menu .logo {
+        font-size: 20px;
+    }
+    .menu span {
+        display: none;
+    }
+    .menu ul {
+        position: fixed;
+        top: 80px;
+        left: 100%;
+        background-color: #000000;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    .menu ul.open {
+        left: 0;
+    }
+    .menu ul li {
+        width: 100%;
+        margin: 50px 0;
+    }
+    .menu ul li a {
+        font-size: 23px;
+    }
+    .slogam  {
+        text-align: text;
+    }
+    .slogam p {
+        text-align: justify;
+        margin: 40px;
+        font-size: 11pt;
+        width: 300px;
+    }
+    .mais-comprado {
+        width: 80%;
+    }
+    .mais-comprado img {
+        width: 200px;
+        height: 100px;
+    }
+    .lateral {
+        margin: 50px;
+        font-size: 12pt;
+    }
+    .lateral p {
+        text-align: justify;
+    }
+    .rodape {
+        height: 7cm;
+    }
+}
+@media (max-width:280px) {
+    .menu .logo {
+        font-size: 10px;
+    }
+    .slogam p {
+        text-align: justify;
+        margin: 20px;
+        font-size: 11pt;
+        width: 240px;
+    }
+}
